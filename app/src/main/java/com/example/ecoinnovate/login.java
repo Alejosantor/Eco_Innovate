@@ -11,21 +11,21 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class login extends AppCompatActivity {
 
-    Button iniciar;
+    Button ingresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        iniciar=(Button) findViewById(R.id.btn_iniciar);
+        ingresar=(Button) findViewById(R.id.btn_ingresar);
 
-        iniciar.setOnClickListener(new View.OnClickListener() {
+        ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, login.class);
+                Intent intent = new Intent(login.this, categorias.class);
                 startActivity(intent);
             }
         });
