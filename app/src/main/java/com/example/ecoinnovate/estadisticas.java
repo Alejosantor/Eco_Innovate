@@ -3,7 +3,6 @@ package com.example.ecoinnovate;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class categorias extends AppCompatActivity {
+public class estadisticas extends AppCompatActivity {
 
     ImageView atras;
 
@@ -20,16 +19,15 @@ public class categorias extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_categorias);
+        setContentView(R.layout.activity_estadisticas);
 
         atras=(ImageView) findViewById(R.id.btn_atras);
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(categorias.this, opciones.class);
+                Intent intent = new Intent(estadisticas.this, opciones.class);
                 startActivity(intent);
             }
         });
-
     }
 }
