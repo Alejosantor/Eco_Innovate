@@ -5,30 +5,38 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/degrade_fondo"
+    android:background="#4CAF50"
     tools:context=".categorias">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="ECO\nINNOVATE"
-        android:textColor="#4CAF50"
-        android:textSize="35sp"
-        android:textStyle="bold"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_marginBottom="484dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_catagorias"
+        android:id="@+id/btn_papel"
         android:layout_width="180dp"
         android:layout_height="51dp"
         android:background="@drawable/button_gradient"
-        android:text="CATEGORIAS"
+        android:text="PAPEL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
@@ -37,11 +45,11 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <Button
-        android:id="@+id/btn_estadisticas"
+        android:id="@+id/btn_vidrio"
         android:layout_width="180dp"
         android:layout_height="51dp"
         android:background="@drawable/button_gradient"
-        android:text="ESTADISTICAS"
+        android:text="VIDRIO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
@@ -50,16 +58,40 @@
         app:layout_constraintVertical_bias="0.597" />
 
     <Button
-        android:id="@+id/btn_concejos"
+        android:id="@+id/btn_hierro"
         android:layout_width="180dp"
         android:layout_height="51dp"
         android:background="@drawable/button_gradient"
-        android:text="CONCEJOS"
+        android:text="HIERRO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.764" />
+
+    <ImageView
+        android:id="@+id/btn_atras"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hierro"
+        app:layout_constraintVertical_bias="0.745"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <ImageView
+        android:id="@+id/btn_adelante"
+        android:layout_width="67dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hierro"
+        app:layout_constraintVertical_bias="0.745"
+        app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

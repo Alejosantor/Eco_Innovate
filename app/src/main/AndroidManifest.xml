@@ -16,6 +16,9 @@
             android:name=".categorias"
             android:exported="false" />
         <activity
+            android:name=".opciones"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity

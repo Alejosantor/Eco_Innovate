@@ -5,11 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class login extends AppCompatActivity {
 
@@ -25,7 +21,7 @@ public class login extends AppCompatActivity {
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(login.this, categorias.class);
+                Intent intent = new Intent(login.this, opciones.class);
                 startActivity(intent);
             }
         });
