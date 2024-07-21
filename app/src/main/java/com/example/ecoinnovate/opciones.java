@@ -16,6 +16,8 @@ public class opciones extends AppCompatActivity {
 
     Button categorias;
     Button estadisticas;
+    Button concejos;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class opciones extends AppCompatActivity {
 
         categorias=(Button) findViewById(R.id.btn_catagorias);
         estadisticas=(Button) findViewById(R.id.btn_estadisticas);
+        concejos=(Button) findViewById(R.id.btn_concejos);
 
         categorias.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,11 +35,17 @@ public class opciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(opciones.this, estadisticas.class);
+                startActivity(intent);
+            }
+        });
+        concejos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(opciones.this, concejos.class);
                 startActivity(intent);
             }
         });
